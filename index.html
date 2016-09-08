@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form method="POST" action="index.php">
+            <div class="error_validate">
+                <span class="text-danger"><?php echo $usernameError; ?></span>
+                <span class="text-danger"><?php echo $emailError; ?></span>
+            </div><br>
+            <label>Username*:</label>
+            <input type="text" id="username" name="username" placeholder="Enter Username">
+            <label>Email*:</label>
+            <input type="text"validate id="email" name="email" placeholder="Enter Email">
+            <input type="submit" name="submit" value="Submit">
+        </form>
+    </body>
+</html>
